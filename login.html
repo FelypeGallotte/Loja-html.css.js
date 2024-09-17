@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/620401fe69.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style_login.css"></link>
+    <title>Login</title>
+</head>
+<body>
+    <!--Cabeçalho-->
+    <header>
+        <h1> Minotauro Center</h1>
+      </header>
+      <!--Formulario-->
+    <main class="pricipal">
+        <form method="post" class="formulario">
+            <div class="container">
+                <fieldset class="dp">
+
+                <!--Dados de login-->
+                    <label for="em">E-mail</label> 
+                    <br>
+                        <input type="email" name="em" placeholder="Digite seu E-mail">
+                    <br>
+                    <label for="sen">Senha</label>
+                        <input type="password" name="sen" placeholder="Digite sua senha">
+                    <br>
+                        <button type="submit" onclick="loginEfetuado(); return false" >Login</button>
+                    <br>
+                    <a class="cadastro" href="cadastro.html">Não possui login?<br>Cadastre-se</a>
+                </fieldset>
+            </div>
+
+        </form>
+    </main>
+    <!--Rodapé-->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <p>Minotauro Center &copy; 2023</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <p>Siga-nos nas redes sociais:</p>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/felype_gallotte?igshid=NGExMmI2YTkyZg=="><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="functions.js"></script>
+</body>
+</html>

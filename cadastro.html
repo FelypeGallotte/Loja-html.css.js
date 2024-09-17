@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/620401fe69.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style_cadastro.css"></link>
+    <title>Cadastro</title>
+</head>
+<body>
+    <!--Cabeçalho-->
+    <header>
+        <h1> Minotauro Center</h1>
+      </header>
+      <!--Formulario-->
+    <main class="pricipal">
+        <form method="post" class="formulario">
+            <div class="container">
+                <!--Dados Pessoais-->
+                <fieldset class="dp">
+                    <b>Dados pessoais</b>
+                    <br>
+                        <input type="text" name="nome" placeholder="Nome">
+                    <br>
+                        <input type="text" name="Sobrenome" placeholder="Sobrenome">
+                    <br>
+                        <input type="text" name="cpf" placeholder="CPF">
+                    <br>
+                        <label for="dt">Data de Nascimento</label>
+                        <br>
+                        <input type="date" name="dt" placeholder="Data de Nascimento">
+                    <br>
+                        <select>
+                            <option>Sexo</option>
+                            <option>Masculino</option>
+                            <option>Feminino</option>
+                            <option>Prefiro não informar</option>
+                        </select>
+                    <br>
+                        <input type="tel" placeholder="Telefone Celular">
+                    <br>
+                <!--Dados do site-->
+                     <b>Dados de Acesso ao Site</b>
+                    <br>
+                        <input type="email" placeholder="Digite seu E-mail">
+                    <br>
+                        <input type="password" placeholder="Senha">
+                    <br>
+                        <button type="submit" onclick="cadastroEfetuado(); return false">Cadastrar</button>
+                    <br>
+                </fieldset>
+            </div>
+
+        </form>
+    </main>
+    <!--Rodapé-->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <p>Minotauro Center &copy; 2023</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <p>Siga-nos nas redes sociais:</p>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/felype_gallotte?igshid=NGExMmI2YTkyZg=="><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="functions.js"></script>
+</body>
+</html>
